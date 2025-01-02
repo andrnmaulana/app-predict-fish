@@ -61,7 +61,7 @@ def show_prediction(species):
     st.success(f"Ikan ini diprediksi sebagai spesies: **{species}**")
     fish_image = get_fish_image(species)
     if fish_image:
-        st.image(fish_image, caption=f"Gambar Ikan {species}", use_container_width=True)
+        st.image(fish_image, caption=f"Gambar Ikan {species}")
     else:
         st.warning("Maaf, gambar untuk spesies ini tidak tersedia")
 
